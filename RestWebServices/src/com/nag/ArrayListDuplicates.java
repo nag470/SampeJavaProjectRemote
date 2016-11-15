@@ -18,6 +18,7 @@ public class ArrayListDuplicates {
 			}
 		}
 		System.out.println(uniq);
+		System.out.println("hai nagendra welcome to github repository");
 
 	}
 
