@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/HelloWorldResponse" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.example.org/HelloWorldResponse">
+<xs:element name="helloworld_response">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element id="greetings" maxOccurs="1" minOccurs="1" name="greetings"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>
