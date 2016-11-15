@@ -1,0 +1,56 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<context:annotation-config />
+	
+<context:component-scan base-package="com.galaxe" />
+	<bean 
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+
+		<property name="location" value="classpath:database.properties" />
+	</bean>
+   <bean id="getVehicle" class="com.galaxe.Journey">
+   <property name="v" ref="car"/>
+   </bean>
+	<bean id="car" class="com.galaxe.CarJourney"/>
+
+	<bean id="bus" class="com.galaxe.BusJourney"/>
+	
+	<!-- <bean id="auto1" class="com.galaxe.AutoImpl">
+	</bean> -->
+	
+	<bean id="emp" class="com.galaxe.Employee">
+     <property name="name" value="null"/>
+    <property name="dep" value="${department}"/>
+   </bean>
+   
+    <bean id="address" class="com.galaxe.Address">
+   <property name="city" value="bangalore"/>
+    <property name="state" value="karnataka"/>
+     </bean> 
+      <bean id="address1" class="com.galaxe.Address">
+   <property name="city" value="hyderabad"/>
+    <property name="state" value="Telangana"/>
+     </bean> 
+    <bean id="std" class="com.galaxe.Student">
+   <property name="age" >
+   <map>
+       <entry key="k1">
+           <value>10</value>
+       </entry>
+       <entry key="k2">
+           <value>java4s</value>
+       </entry>
+       <entry key="k3">
+           <value>10.55</value>
+       </entry>
+   </map>
+</property>
+     </bean> 
+     
+</beans>
