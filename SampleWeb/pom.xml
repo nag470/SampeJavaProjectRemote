@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>SampleWeb</groupId>
   <artifactId>SampleWeb</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>5.2.20.RELEASE</version>
   <packaging>war</packaging>
   <properties>
 		 <version>4.0.3.RELEASE</version>
